@@ -1793,6 +1793,7 @@ function onetone_get_section_options( $id, $type='' ){
 		'label' =>  __('Section Content Model', 'onetone'),
 		'slug' =>'section_content_model_'.$id,
 		'default' => $content_model,
+		'transport' => 'refresh',
 		'type' => 'radio-buttonset',
 		'choices'=>array('0'=> __('Default', 'onetone'),'1'=>__('Custom', 'onetone')),
 		'section' => 'sections_'.$id,

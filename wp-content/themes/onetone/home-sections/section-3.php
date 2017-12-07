@@ -41,14 +41,16 @@
 				 $image  = $gallery_item[ "image" ];
 				 $link   = esc_url($gallery_item[ "link" ]);
 				 $target = esc_attr($gallery_item[ "target" ]);
+				 $title = '';
 				 if (is_numeric($image)) {
 					$image_attributes = wp_get_attachment_image_src($image, 'full');
+					$title = get_post($image)->post_title;
 					$image       = $image_attributes[0];
 				  }
 				 
 				 if($image !=''){
 					 if( $link == "" )
-						 $img_wrap = '<a href="'.esc_url($image).'" rel="onetone-portfolio-image section_image_'.$i.'_'.$c.'"><img src="'.esc_url($image).'" alt="'.sprintf(__('Portfolio Image %s', 'onetone'),($c+1)).'"  class="feature-img "><div class="img-overlay dark">
+						 $img_wrap = '<a href="'.esc_url($image).'" rel="onetone-portfolio-image section_image_'.$i.'_'.$c.'"><img src="'.esc_url($image).'" alt="'.esc_attr($title).'"  class="feature-img "><div class="img-overlay dark">
 																						<div class="img-overlay-container">
 																							<div class="img-overlay-content">
 																								<i class="fa fa-search"></i>
@@ -56,7 +58,7 @@
 																						</div>
 																					</div></a>';
 					 else
-						 $img_wrap = '<a href="'.$link.'" target="'.$target.'"><img src="'.esc_url($image).'" alt="'.sprintf(__('Portfolio Image %s', 'onetone'),($c+1)).'" class="feature-img "><div class="img-overlay dark">
+						 $img_wrap = '<a href="'.$link.'" target="'.$target.'"><img src="'.esc_url($image).'" alt="'.esc_attr($title).'" class="feature-img "><div class="img-overlay dark">
 																						<div class="img-overlay-container">
 																							<div class="img-overlay-content">
 																								<i class="fa fa-link"></i>

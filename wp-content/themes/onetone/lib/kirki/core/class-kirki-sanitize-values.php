@@ -102,7 +102,11 @@ class Kirki_Sanitize_Values {
 	 * @return string
 	 */
 	public static function css_dimension( $value ) {
-
+		
+		// If the value is empty, return empty.
+		if ( '' === $value || is_array($value) ) {
+			return $value;
+		}
 		// Trim it.
 		$value = trim( $value );
 

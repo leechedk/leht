@@ -2,6 +2,10 @@
 
 == CHANGE LOG == 
 
+= Version 2.3.9 = = 
+* Fix - Fixed gallery image title issue
+* Fix - Fixed Section Content Model refresh issue
+
 = Version 2.3.8 = = 17/11/2017
 * Compatible with plugin Visual Composer
 * Fix - Fixed "Icon Color" option issue for section - Service
