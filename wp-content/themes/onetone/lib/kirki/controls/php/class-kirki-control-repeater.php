@@ -427,7 +427,6 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 								<div data-field="{{{ field.id }}}">{{{ field.default }}}</div>
 
 							<# } #>
-
 						</div>
 					<# }); #>
 					<button type="button" class="button-link repeater-row-remove"><?php esc_attr_e( 'Remove', 'onetone' ); ?></button>

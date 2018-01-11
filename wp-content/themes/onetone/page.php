@@ -118,4 +118,4 @@ $container_css .= 'padding-bottom:'.$padding_bottom.';';
     </div>
   </div>
 </article>
-<?php get_footer(); ?>
+<?php get_footer();

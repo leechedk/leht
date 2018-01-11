@@ -41,6 +41,15 @@ class Kirki_Control_Base extends WP_Customize_Control {
 	public $kirki_config = 'global';
 
 	/**
+	 * Whitelisting the "required" argument.
+	 *
+	 * @since 3.0.17
+	 * @access public
+	 * @var array
+	 */
+	public $required = array();
+
+	/**
 	 * Extra script dependencies.
 	 *
 	 * @since 3.1.0
@@ -84,15 +93,28 @@ class Kirki_Control_Base extends WP_Customize_Control {
 				'wp-color-picker-alpha',
 				'selectWoo',
 				'jquery-ui-button',
-				'jquery-ui-spinner',
 			),
 			KIRKI_VERSION
 		);
 
+		wp_localize_script(
+			'kirki-script',
+			'kirkiL10n',
+			array(
+				'noFileSelected' => esc_attr__( 'No File Selected', 'onetone' ),
+				'remove'         => esc_attr__( 'Remove', 'onetone' ),
+				'default'        => esc_attr__( 'Default', 'onetone' ),
+				'selectFile'     => esc_attr__( 'Select File', 'onetone' ),
+				'standardFonts'  => esc_attr__( 'Standard Fonts', 'onetone' ),
+				'googleFonts'    => esc_attr__( 'Google Fonts', 'onetone' ),
+			)
+		);
+
+		$suffix = str_replace( '.min', '', $suffix );
 		// Enqueue the style.
 		wp_enqueue_style(
 			'kirki-styles',
-			"{$kirki_url}controls/css/styles.css",
+			"{$kirki_url}controls/css/styles{$suffix}.css",
 			array(),
 			KIRKI_VERSION
 		);
@@ -111,6 +133,8 @@ class Kirki_Control_Base extends WP_Customize_Control {
 		if ( isset( $this->default ) ) {
 			$this->json['default'] = $this->default;
 		}
+		// Required.
+		$this->json['required'] = $this->required;
 		// Output.
 		$this->json['output'] = $this->output;
 		// Value.

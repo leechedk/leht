@@ -2,6 +2,21 @@
 
 == CHANGE LOG == 
 
+= Version 2.4.3 = = 08/01/2018
+* Fix - Fixed "Enable Page Title Bar" option issue
+
+= Version 2.4.2 = = 27/12/2017
+* Fix - Fixed section Counter issue
+* Fix - Fixed "Section Content Model" option issue
+* Optimized: section content option
+* Optimized: customizer loading
+
+= Version 2.4.1 = = 25/12/2017
+* Fix - Fixed slider autoPlay issue
+
+= Version 2.4.0 = = 
+* Fix - Fixed animation issue
+
 = Version 2.3.9 = = 
 * Fix - Fixed gallery image title issue
 * Fix - Fixed Section Content Model refresh issue

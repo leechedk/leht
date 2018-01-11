@@ -6,6 +6,8 @@
  */
 
 get_header(); 
+$enable_page_title_bar  = onetone_option('enable_page_title_bar');
+$display_title_bar_title= onetone_option('display_title_bar_title',1 );
 $left_sidebar           = onetone_option('left_sidebar_blog_posts');
 $right_sidebar          = onetone_option('right_sidebar_blog_posts');
 $display_author_info    = onetone_option('display_author_info',1 );
@@ -22,17 +24,20 @@ $aside          = 'both-aside';
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 
-
+<?php if( $enable_page_title_bar == 'yes' || $enable_page_title_bar == '1' ):?>
 <section class="page-title-bar title-left no-subtitle" style="">
             <div class="container">
+            <?php if($display_title_bar_title == 1):?>
                 <hgroup class="page-title">
                     <h1><?php the_title();?></h1>
                 </hgroup>
+                <?php endif;?>
                 <?php onetone_get_breadcrumb(array("before"=>"<div class=''>","after"=>"</div>","show_browse"=>false,"separator"=>'','container'=>'div'));?> 
                 <div class="clearfix"></div>            
             </div>
         </section>
-        
+        <?php endif;?>
+ 
 <div class="post-wrap">
             <div class="container">
                 <div class="post-inner row <?php echo $aside; ?>">

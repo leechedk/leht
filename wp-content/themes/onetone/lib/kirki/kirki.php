@@ -1,23 +1,4 @@
 <?php
-/**
- * Plugin Name:   Kirki Toolkit
- * Plugin URI:    http://kirki.org
- * Description:   The ultimate WordPress Customizer Toolkit
- * Author:        Aristeides Stathopoulos
- * Author URI:    http://aristeides.com
- * Version:       3.0.15
- * Text Domain:   kirki
- *
- * GitHub Plugin URI: aristath/kirki
- * GitHub Plugin URI: https://github.com/aristath/kirki
- *
- * @package     Kirki
- * @category    Core
- * @author      Aristeides Stathopoulos
- * @copyright   Copyright (c) 2017, Aristeides Stathopoulos
- * @license     http://opensource.org/licenses/https://opensource.org/licenses/MIT
- * @since       1.0
- */
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -51,22 +32,21 @@ if ( ! defined( 'KIRKI_VERSION' ) ) {
 Kirki::$path = wp_normalize_path( dirname( __FILE__ ) );
 Kirki_Init::set_url();
 
+new Kirki_Controls();
+
 if ( ! function_exists( 'Kirki' ) ) {
-	// @codingStandardsIgnoreStart
 	/**
 	 * Returns an instance of the Kirki object.
 	 */
-	function Kirki() {
+	function kirki() {
 		$kirki = Kirki_Toolkit::get_instance();
 		return $kirki;
 	}
-	// @codingStandardsIgnoreEnd
-
 }
 
 // Start Kirki.
 global $kirki;
-$kirki = Kirki();
+$kirki = kirki();
 
 // Instantiate the modules.
 $kirki->modules = new Kirki_Modules();
@@ -91,9 +71,3 @@ $custom_config_path = wp_normalize_path( $custom_config_path );
 if ( file_exists( $custom_config_path ) ) {
 	include_once $custom_config_path;
 }
-
-// Add upgrade notifications.
-include_once wp_normalize_path( dirname( __FILE__ ) . '/upgrade-notifications.php' );
-
-// Uncomment this line to see the demo controls in the customizer.
-/* include_once dirname( __FILE__ ) . '/example.php'; */

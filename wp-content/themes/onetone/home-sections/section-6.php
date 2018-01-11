@@ -36,7 +36,7 @@
 		 if( $title !='' || $number!='' )
 		   $counters .= '<div class="col-md-3">
 			  <div class="magee-counter-box">
-				<div class="counter '."counter_number_".$c."_".$i.'"><span class="counter-num">'.absint($number).'</span></div>
+				<div class="counter '."counter_number_".$c."_".$i.'"><span class="counter-num" data-counterup-nums="'.absint($number).'">'.absint($number).'</span></div>
 				<div class="counter-bottom_title '."counter_title_".$c."_".$i.'"  style="font-size:24px">'.esc_attr($title).'</div>
 			  </div>
 			</div>';

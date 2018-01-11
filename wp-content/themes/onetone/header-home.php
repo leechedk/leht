@@ -32,7 +32,7 @@
   $header_overlay     = onetone_option('header_overlay');
   $overlay            = '';
   $overlay_logo       = '';
-  if( ($header_overlay == 'yes'|| $header_overlay == '1'|| $header_overlay == 'on') && (is_front_page() || is_home() ) )
+  if( ($header_overlay == 'yes'|| $header_overlay == '1'|| $header_overlay == 'on') )
   {
     $overlay      = 'overlay';
 	$overlay_logo = onetone_option('overlay_logo');

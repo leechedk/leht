@@ -33,7 +33,7 @@
       <div class="section-subtitle  <?php echo 'section_subtitle_'.$i;?>"><?php echo do_shortcode(wp_kses($section_subtitle, $allowedposttags))?></div>
       <?php endif;?>
       <div class="home-section-content section_team_<?php echo $i; ?>">
-      <div class="onetone-owl-carousel-wrap">
+      <div class="onetone-owl-carousel-wrap <?php echo $onetone_animated;?>" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
       <?php 
 	  $str = array_merge(range(0,9),range('a','z')); 
       shuffle($str); 
@@ -80,7 +80,6 @@
 				}
 				
 				  $team_item .= '<div class="onetone-carousel-item">
-				  <div class="'.$onetone_animated.'" data-animationduration="0.9" data-animationtype="fadeInDown" data-imageanimation="no">
 									<div class="magee-person-box">
 									  <div class="person-img-box">
 										<div class="img-box figcaption-middle text-center fade-in">'.$image.'</div>
@@ -93,7 +92,6 @@
 										 '.$icons.'
 										</ul>
 									  </div>
-									</div>
 									</div>
 								</div>';
 			  

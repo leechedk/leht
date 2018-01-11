@@ -4,9 +4,14 @@
  * Theme Functions
  **/
 require_once dirname( __FILE__ ) . '/lib/kirki/kirki.php';
+
+// customizer controls
+require_once dirname( __FILE__ ) . '/lib/customizer-controls/editor/editor-control.php';
+require_once dirname( __FILE__ ) . '/lib/customizer-controls/editor/editor-page.php';
+
 load_template( trailingslashit( get_template_directory() ) . 'includes/theme-functions.php' );
 
-global $onetone_options_saved, $onetone_old_version, $onetone_option_name,$onetone_model_v;
+global $onetone_options_saved, $onetone_old_version, $onetone_option_name, $onetone_model_v;
 $onetone_options_saved = false;
 $onetone_old_version   = false;
 $onetone_model_v       = false;
@@ -14,19 +19,18 @@ $onetone_option_name   = onetone_option_name();
 
 if ( $theme_options = get_option($onetone_option_name) ) {
 	
- $onetone_options_saved = true;
-if( (isset($theme_options['section_content_0']) &&  $theme_options['section_content_0'] != '') &&
+$onetone_options_saved = true;
+if( (isset($theme_options['section_content_0']) && $theme_options['section_content_0'] != '') &&
 	(isset($theme_options['section_content_1']) && $theme_options['section_content_0'] != '') &&
 	(isset($theme_options['section_content_2']) && $theme_options['section_content_0'] != '') ){
-	$onetone_old_version = true;
 	
+	$onetone_old_version = true;
 }
 if( isset($theme_options['section_content_model_0']) ||
 	isset($theme_options['section_content_model_1']) ||
 	isset($theme_options['section_content_model_2']) ||
 	isset($theme_options['section_content_model_3']) ){
 	$onetone_model_v = true;
-	
 }
 
 // Version <= 2.0.5

@@ -1810,7 +1810,7 @@ function onetone_get_section_options( $id, $type='' ){
 		'section' => 'sections_'.$id,
 		'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -1835,7 +1835,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -1850,7 +1850,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -1872,7 +1872,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -1888,7 +1888,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -1944,7 +1944,7 @@ function onetone_get_section_options( $id, $type='' ){
 				 ),
 				 'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -1961,7 +1961,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -1984,7 +1984,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'transport' => 'postMessage',
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2001,7 +2001,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2017,7 +2017,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2052,7 +2052,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2154,7 +2154,7 @@ function onetone_get_section_options( $id, $type='' ){
 	  ),
 	  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2234,7 +2234,7 @@ function onetone_get_section_options( $id, $type='' ){
 	  ),
 	  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2268,7 +2268,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2284,7 +2284,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2451,7 +2451,7 @@ function onetone_get_section_options( $id, $type='' ){
 			  ),
 			  'active_callback' => array(
 										array(
-											'setting'  => 'section_content_model_'.$id,
+											'setting'  => $option_name.'[section_content_model_'.$id.']',
 											'operator' => '===',
 											'value'    => '0',
 										),)
@@ -2470,7 +2470,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2506,7 +2506,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2531,7 +2531,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2552,7 +2552,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2574,7 +2574,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2595,7 +2595,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2618,7 +2618,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2639,7 +2639,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2661,7 +2661,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2682,7 +2682,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2714,7 +2714,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2730,7 +2730,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2813,7 +2813,7 @@ function onetone_get_section_options( $id, $type='' ){
 			  ),
 			  'active_callback' => array(
 										array(
-											'setting'  => 'section_content_model_'.$id,
+											'setting'  => $option_name.'[section_content_model_'.$id.']',
 											'operator' => '===',
 											'value'    => '0',
 										),)
@@ -2832,7 +2832,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2848,7 +2848,7 @@ function onetone_get_section_options( $id, $type='' ){
 						  'section' => 'sections_'.$id,
 						  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),),
@@ -2875,7 +2875,7 @@ function onetone_get_section_options( $id, $type='' ){
 		'section' => 'sections_'.$id,
 		'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2891,7 +2891,7 @@ function onetone_get_section_options( $id, $type='' ){
 		  'section' => 'sections_'.$id,
 		  'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2912,7 +2912,7 @@ function onetone_get_section_options( $id, $type='' ){
 		'section' => 'sections_'.$id,
 		'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '0',
 								),)
@@ -2929,7 +2929,7 @@ function onetone_get_section_options( $id, $type='' ){
 		'type' => 'editor',
 		'active_callback' => array(
 								array(
-									'setting'  => 'section_content_model_'.$id,
+									'setting'  => $option_name.'[section_content_model_'.$id.']',
 									'operator' => '===',
 									'value'    => '1',
 								),),
@@ -3026,6 +3026,7 @@ function onetone_theme_options(){
 	$onetone_option_args['choices'] =  $choices;
 	$onetone_option_args['target'] =  $target;
 	$onetone_option_args['align'] =  $align;
+	$onetone_option_args['option_name'] =  onetone_option_name();
 	$onetone_option_args['onetone_options'] =  $onetone_options_db;
 	$imagepath = get_template_directory_uri().'/images/';
 	
@@ -4505,8 +4506,8 @@ $options[] = array(
 		  'slug'          => 'enable_page_title_bar',
 		 'label'       => __( 'Enable Page Title Bar', 'onetone' ),
 		  'description'       => __( 'Choose to enable page title bar in pages & posts', 'onetone' ),
-		  'default'         => 'yes',
-		  'type'        => 'select',
+		  'default'         => '1',
+		  'type'        => 'checkbox',
 		  'section'     => 'onetone_page_title_bar_options',
 		  
 		  'choices'     => $choices
@@ -5878,10 +5879,18 @@ add_action('wp_ajax_nopriv_onetone_options_import', 'onetone_options_import');
 function onetone_otpions_restore(){
   global $onetone_options_default;
   $option_name = onetone_option_name();
-  	add_option($option_name.'_backup_'.time(),get_option($option_name));
-  	update_option($option_name,'');
+  add_option($option_name.'_backup_'.time(),get_option($option_name));
+  update_option($option_name,'');
   echo 'done';
   exit(0);
 }
 add_action( 'wp_ajax_onetone_otpions_restore', 'onetone_otpions_restore' );
 add_action( 'wp_ajax_nopriv_onetone_otpions_restore', 'onetone_otpions_restore' );
+
+
+
+function onetone_control_types( $control_types ) {
+	$control_types['onetone-editor'] = 'Onetone_Customize_Editor_Control';
+    return $control_types;
+}
+add_filter( 'kirki/control_types', 'onetone_control_types', 20 );

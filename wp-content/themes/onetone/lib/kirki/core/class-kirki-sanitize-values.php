@@ -103,10 +103,9 @@ class Kirki_Sanitize_Values {
 	 */
 	public static function css_dimension( $value ) {
 		
-		// If the value is empty, return empty.
-		if ( '' === $value || is_array($value) ) {
+		if(is_array($value))
 			return $value;
-		}
+			
 		// Trim it.
 		$value = trim( $value );
 
@@ -120,9 +119,9 @@ class Kirki_Sanitize_Values {
 			return '';
 		}
 
-		// If auto, return auto.
-		if ( 'auto' === $value ) {
-			return 'auto';
+		// If auto, inherit or initial, return the value.
+		if ( 'auto' === $value || 'initial' === $value || 'inherit' === $value ) {
+			return $value;
 		}
 
 		// Return empty if there are no numbers in the value.

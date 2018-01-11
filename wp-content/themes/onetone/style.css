@@ -2,7 +2,7 @@
 Theme Name: OneTone
 Theme URI: https://www.mageewp.com/onetone-theme.html
 Description: Onetone is a one-page business theme based on Bootstrap framework and coded with HTML5/CSS3. All required information are displayed on a single page with clear order according to users' preferences. The basic sections designed for business purpose have already been built for you, such as services, about, gallery, clients, etc. There's also an extensive admin panel where unlimited sections can be easily added. Multiple options are available if you prefer to do some adjustments, such as changing background, parallax scrolling background, video background, Font Awesome Icons, uploading logo and  favicon,adding custom CSS and so on. The theme is also responsive, clean, and SEO optimized. Please note that with our updation, interface of your blog can grow up with futher more diversities.
-Version: 2.3.9
+Version: 2.4.4
 Author: MageeWP
 Author URI: https://www.mageewp.com
 License: GNU General Public License
@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, two-columns, custom-background, custom-header, custom-menu, theme-options, left-sidebar, translation-ready, editor-style, featured-images, full-width-template, rtl-language-support, custom-colors, threaded-comments, buddypress, post-formats
 Text Domain: onetone
 
-OneTone Wordpress Theme has been created by Mageewp.com, Copyright 2017 Mageewp.com.
+OneTone Wordpress Theme has been created by Mageewp.com, Copyright 2018 Mageewp.com.
 OneTone Wordpress theme is released under the terms of GNU GPL.
 */
 
@@ -685,10 +685,6 @@ ul.top-bar-sns {
 	margin-left: 10px;
 }
 
-.top-bar-sns li a {
-	color: ;
-}
-
 .top-bar-menu ul {
 	margin: 0;
 	overflow: hidden;
@@ -711,10 +707,6 @@ ul.top-bar-sns {
 .top-bar-right .top-bar-menu li {
 	margin-left: 10px;
 	padding-left: 10px;
-}
-
-.top-bar-menu li a {
-	color: ;
 }
 
 /*
@@ -2614,6 +2606,8 @@ section.video-section .home-container {
     border: 0 solid #fff;
     border-width: 0 0 3px 3px;
     -webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #onetone-owl-slider .owl-next {
@@ -2628,6 +2622,8 @@ section.video-section .home-container {
     border: 0 solid #fff;
     border-width: 3px 3px 0 0;
     -webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #onetone-owl-slider .owl-dots {
